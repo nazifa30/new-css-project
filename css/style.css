@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: #F79B72;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 15px;
+}
+
+.header p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center nav items */
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px; /* Add side margin for spacing */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.content {
+    background-color: #2A4759;
+    padding: 50px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search box */
+    margin: 20px 0; /* Space above and below the search container */
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-box {
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px; /* Adjusted padding */
+    border: 1px solid #ccc; /* Border style */
+    width: 300px; /* Width for the search box */
+    margin-right: 10px; /* Space between the search box and button */
+}
+
+.search-button {
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #F79B72; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: #e68a56; /* Darker shade on hover */
+}
+
+.flex-container {
+    display:grid;
+    justify-content: center; /* Center featured proverbs */
+    gap: 30px; 
+    margin-top: 50px; /* Space above the flex container */
+}
+.proverb {
+    margin: 0; /* Remove any default margin */
+    font-size: 1.3em; /* Adjust font size as needed */
+    line-height: 1.5; /* Increase line height for better readability */
+    text-align: center; /* Ensure text is centered */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-style: italic ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    
+
+}
+
+.featured-proverbs .proverb {
+    background-color: #F79B72; /* Consistent background */
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center; /* Center text */
+    width: 300px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+.featured-proverbs .proverb:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 4px 15px  #F79B72; /* Shadow effect */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.text-box {
+    background-color: #e68a56;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: justify; /* Ensure text is justified */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+.text-box:hover{
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 4px 15px  #F79B72; /* Shadow effect */
+}
+
+.text-box p {
+    margin: 10px 0;
+}
+
+/* Specific styles for Farsi text */
+.text-box.farsi {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    direction: rtl;
+}
+
+/* Specific styles for English text */
+.text-box .english {
+    font-style: italic;
+    text-align: justify; /* Ensure English text is justified */
+    direction: ltr; /* Left-to-right direction */
+    letter-spacing: normal; /* Change to normal or adjust as needed */
+    word-spacing: normal; /* Adjust the word spacing */
+}
+
+.custom-flex-container {
+    display: grid;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    background-color: #e68a56; /* Background color */
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Adjust height based on content */
+    padding: 30px; /* Add some padding */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin: auto; /* Center the container on the page */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition properties */
+}
+
+.custom-flex-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container */
+    box-shadow: 0 4px 15px #e68a56;; /* Add shadow effect on hover */
+}
+
+.form {
+    display:grid;
+    flex-direction: column; /* Arrange form elements vertically */
+    width: 50%; /* Use full width of the container */
+}
+
+.label {
+    margin-bottom: 10px; /* Space between label and input */
+    color: white;
+}
+
+.input {
+    margin-bottom: 20px; /* Space between inputs and button */
+    padding: 10px; /* Add padding to input */
+    border-radius: 5px; /* Rounded corners for input */
+    border-color: white;
+}
+
+.button {
+    padding: 10px 20px; /* Button padding */
+    background-color:  #2A4759; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footer {
+    display: grid;
+    background-color: #DDDDDD; /* Footer background color */
+    text-align: center; /* Center text */
+    padding: 15px; /* Padding for spacing */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.3em; /* Base font size */
+    color: #2A4759; /* Text color */
+    line-height: 1.5; /* Line height for better readability */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Ensure it looks good on smaller screens */
+.footer {
+    padding: 40px; /* Adjust padding for smaller screens */
+}
